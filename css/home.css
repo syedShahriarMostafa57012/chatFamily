@@ -1,0 +1,198 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+/* Button shine */
+.btn {
+  position: relative;
+  overflow: hidden;
+  /* Button shine */
+}
+
+.btn:hover .shine {
+  -webkit-transform: skewX(20deg) translateX(500px);
+          transform: skewX(20deg) translateX(500px);
+}
+
+.btn .btn-text {
+  border: 0;
+  height: 100%;
+  color: white;
+  background: transparent;
+  font-weight: bold;
+  -webkit-transition: background .3s linear;
+  transition: background .3s linear;
+  letter-spacing: 2px;
+  border-radius: 10px;
+}
+
+.btn .shine {
+  position: absolute;
+  top: 0;
+  left: -70px;
+  height: 100%;
+  width: 20px;
+  background: rgba(255, 255, 255, 0.4);
+  -webkit-transition: all .3s linear;
+  transition: all .3s linear;
+  -webkit-transform: skewX(20deg) translateX(0);
+          transform: skewX(20deg) translateX(0);
+}
+
+header {
+  font-family: "Poppins", sans-serif;
+  color: #e6eaf0;
+  background: url("../images/header-background.jpg") no-repeat 50% 50%/cover;
+}
+
+header .navbar {
+  background: transparent !important;
+}
+
+header .navbar .navbar-collapse .navbar-nav .nav-item {
+  padding: 0px 5px;
+}
+
+header .navbar .navbar-collapse .navbar-nav .nav-item .nav-link {
+  color: white;
+  padding: 10px 20px;
+  border-radius: 15px;
+}
+
+header .navbar .navbar-collapse .navbar-nav .nav-item .nav-link:hover {
+  background: #dd03a7ff;
+}
+
+header .navbar .navbar-collapse .navbar-nav .nav-item .active {
+  background: #dd03a7ff;
+}
+
+header .header-banner .row .a {
+  padding: 160px 0px;
+  padding-right: 20px;
+}
+
+header .header-banner .row .a h1 {
+  font-weight: bolder;
+  font-size: 50px;
+  margin-bottom: 20px;
+}
+
+header .header-banner .row .a p {
+  margin-bottom: 20px;
+}
+
+header .header-banner .row .a .button {
+  background: #dd03a7ff !important;
+  border-radius: 20px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+header .header-banner .row .a .button:hover {
+  -webkit-transform: translateY(-10px);
+          transform: translateY(-10px);
+}
+
+header .header-banner .row .b {
+  padding-top: 20px;
+}
+
+/* footer css start from here*/
+footer {
+  background: linear-gradient(45deg, rgba(86, 58, 250, 0.9) 0%, rgba(116, 15, 214, 0.9) 100%), url(../images/hero-bg.jpg) center center no-repeat;
+  color: white;
+}
+
+/*animation and root*/
+.hero-waves {
+  display: block;
+  width: 100%;
+  height: 60px;
+  position: relative;
+}
+
+.wave1 use {
+  -webkit-animation: move-forever1 10s linear infinite;
+  animation: move-forever1 10s linear infinite;
+  -webkit-animation-delay: -2s;
+  animation-delay: -2s;
+}
+
+.wave2 use {
+  -webkit-animation: move-forever2 8s linear infinite;
+  animation: move-forever2 8s linear infinite;
+  -webkit-animation-delay: -2s;
+  animation-delay: -2s;
+}
+
+.wave3 use {
+  -webkit-animation: move-forever3 6s linear infinite;
+  animation: move-forever3 6s linear infinite;
+  -webkit-animation-delay: -2s;
+  animation-delay: -2s;
+}
+
+@-webkit-keyframes move-forever1 {
+  0% {
+    -webkit-transform: translate(85px, 0%);
+            transform: translate(85px, 0%);
+  }
+  100% {
+    -webkit-transform: translate(-90px, 0%);
+            transform: translate(-90px, 0%);
+  }
+}
+
+@keyframes move-forever1 {
+  0% {
+    -webkit-transform: translate(85px, 0%);
+            transform: translate(85px, 0%);
+  }
+  100% {
+    -webkit-transform: translate(-90px, 0%);
+            transform: translate(-90px, 0%);
+  }
+}
+
+@-webkit-keyframes move-forever2 {
+  0% {
+    -webkit-transform: translate(-90px, 0%);
+            transform: translate(-90px, 0%);
+  }
+  100% {
+    -webkit-transform: translate(85px, 0%);
+            transform: translate(85px, 0%);
+  }
+}
+
+@keyframes move-forever2 {
+  0% {
+    -webkit-transform: translate(-90px, 0%);
+            transform: translate(-90px, 0%);
+  }
+  100% {
+    -webkit-transform: translate(85px, 0%);
+            transform: translate(85px, 0%);
+  }
+}
+
+@-webkit-keyframes move-forever3 {
+  0% {
+    -webkit-transform: translate(-90px, 0%);
+            transform: translate(-90px, 0%);
+  }
+  100% {
+    -webkit-transform: translate(85px, 0%);
+            transform: translate(85px, 0%);
+  }
+}
+
+@keyframes move-forever3 {
+  0% {
+    -webkit-transform: translate(-90px, 0%);
+            transform: translate(-90px, 0%);
+  }
+  100% {
+    -webkit-transform: translate(85px, 0%);
+            transform: translate(85px, 0%);
+  }
+}
+/*# sourceMappingURL=home.css.map */

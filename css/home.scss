@@ -1,0 +1,162 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+
+// colors variable 
+$pink: #dd03a7ff;
+$white-text: #e6eaf0;
+$blue: #0062e2;
+$black-text:#36454F;
+$poppins-font:'Poppins', sans-serif;
+
+
+/* Button shine */
+
+.btn {
+    position: relative;
+    overflow: hidden;
+
+    &:hover .shine {
+        transform: skewX(20deg) translateX(500px);
+    }
+    .btn-text {
+        border: 0;
+        height:100%;
+        color: white;
+        background:transparent;
+        font-weight: bold;
+        transition: background .3s linear;
+        letter-spacing: 2px;
+        border-radius: 10px;
+    }
+/* Button shine */
+
+
+
+    .shine {
+        position: absolute;
+        top: 0;
+        left: -70px;
+        height: 100%;
+        width: 20px;
+        background: rgba(255, 255, 255, 0.4);
+        transition: all .3s linear;
+        transform: skewX(20deg) translateX(0);
+    }
+
+}
+
+
+
+
+
+header{
+    font-family:$poppins-font;
+    color:$white-text;
+    background:url("../images/header-background.jpg") no-repeat 50% 50% /cover;
+    .navbar{
+        background:transparent !important;
+        .navbar-collapse{
+            .navbar-nav{
+                .nav-item{
+                    padding:0px 5px;
+                    .nav-link{
+                        color:white;
+                        padding:10px 20px;
+                        border-radius:15px;
+                        &:hover{
+                            background:$pink;
+                        }
+
+                       
+                    }
+                    .active{
+                        background:$pink;
+
+                    }
+                }
+            }
+        }
+    }
+    .header-banner{
+        .row{
+            .a{
+                padding:160px 0px;
+                padding-right:20px;
+                h1{
+                    font-weight:bolder;
+                    font-size:50px;
+                    margin-bottom: 20px;
+
+                }
+                p{
+                    margin-bottom:20px;
+                }
+                .button{
+                    background:$pink !important;
+                    border-radius: 20px;
+                    transition:0.5s;
+                    &:hover{
+                        transform:translateY(-10px)
+                    }
+
+                }
+                
+
+            }
+            .b{
+                padding-top:20px;
+            }
+        }
+    }
+}
+
+
+
+/* footer css start from here*/
+footer{
+    background: linear-gradient(45deg, rgba(86, 58, 250, 0.9) 0%, rgba(116, 15, 214, 0.9) 100%), url(../images/hero-bg.jpg) center center no-repeat;
+    color:white;
+    .container{
+        .row{
+            .a{
+
+            }
+            .b{
+
+            }
+            .c{
+
+            }
+        }
+    }
+}
+
+
+
+
+
+/*animation and root*/
+@import"animation&root"
+
+
+// background-image: linear-gradient(to right, #4776E6 0%, #8E54E9 51%, #4776E6 100%);
+// margin: 10px;
+// padding: 15px 45px;
+// text-align: center;
+// text-transform: uppercase;
+// transition: 0.5s;
+// background-size: 200% auto;
+// color: white;
+// box-shadow: 0 0 20px #eee;
+// border-radius: 10px;
+// display: block;
+
+// &:hover {
+//     background-position: right center;
+//     /* change the direction of the change here */
+//     color: #fff;
+//     text-decoration: none;
+// }
+//background: linear-gradient(45deg, rgba(86, 58, 250, 0.9) 0%, rgba(116, 15, 214, 0.9) 100%), url(../img/hero-bg.jpg) center center no-repeat;
+
